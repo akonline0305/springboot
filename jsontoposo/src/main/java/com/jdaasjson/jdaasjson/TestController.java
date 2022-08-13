@@ -17,6 +17,7 @@ public class TestController {
     @GetMapping("/hello")
     public ResponseEntity<String> get()
     {
+        //Object Mapper
         ObjectMapper mapper = new ObjectMapper();
         mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 
